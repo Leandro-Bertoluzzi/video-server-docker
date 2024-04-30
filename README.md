@@ -20,10 +20,10 @@
 
 <p align="center">
   <a href="#dart-about">About</a> &#xa0; | &#xa0; 
-  <a href="#sparkles-features">Features</a> &#xa0; | &#xa0;
   <a href="#rocket-technologies">Technologies</a> &#xa0; | &#xa0;
   <a href="#white_check_mark-requirements">Requirements</a> &#xa0; | &#xa0;
   <a href="#checkered_flag-starting">Starting</a> &#xa0; | &#xa0;
+  <a href="#gear-configuration">Configuration</a> &#xa0; | &#xa0;
   <a href="#memo-license">License</a> &#xa0; | &#xa0;
   <a href="https://github.com/Leandro-Bertoluzzi" target="_blank">Author</a>
 </p>
@@ -32,7 +32,10 @@
 
 ## :dart: About ##
 
-Describe your project
+Simple video webserver, can be used for:
+- Share a video in the local network.
+- Together with Ngrok or similar, share a video with anyone outside your network.
+- Emulate a camera webserver, for integration testing.
 
 ## :rocket: Technologies ##
 
@@ -59,6 +62,12 @@ $ docker compose up -d
 
 # The server will initialize in <http://localhost:8081>
 ```
+
+## :gear: Configuration
+
+By default, it streams the test file `/camera/video/mock.mp4` in a loop. You can change the video source by modifying the variable `netcam_url` in `motion/config/motion.conf`.
+
+For further configuration details, please read the [Motion docs](https://motion-project.github.io/motion_config.html).
 
 ## :memo: License ##
 

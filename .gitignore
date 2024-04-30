@@ -1,0 +1,7 @@
+# Environments
+.env
+
+# Video files
+*.mp4
+*.mkv
+*.mpeg
